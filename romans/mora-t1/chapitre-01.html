@@ -5,38 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mora — Tome I — Chapitre 1</title>
 
-  <!-- Ton CSS global -->
   <link rel="stylesheet" href="../../style.css" />
 
   <style>
-    /* Container général de la page */
-    .page {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 48px 20px 80px;
-    }
+    .page { max-width: 1100px; margin: 0 auto; padding: 48px 20px 80px; }
 
-    /* Titres en haut (tu peux les laisser centrés) */
     .chapter-title { text-align: center; margin-bottom: 28px; }
     .chapter-title h1, .chapter-title h2, .chapter-title p { margin: 0; }
     .chapter-title p { margin-top: 8px; opacity: 0.85; }
 
-    /* Le bloc 2 colonnes (gauche = texte / droite = boutons) */
-    .chapter-block {
-      display: flex;
-      gap: 40px;
-      margin-top: 22px;
-      align-items: flex-start;
-    }
+    .chapter-block { display: flex; gap: 40px; margin-top: 22px; align-items: flex-start; }
     .text-column { flex: 2; text-align: left; }
     .image-column { flex: 1; }
 
-    /* Les boutons à droite */
     .image-buttons {
       display: flex;
       flex-direction: column;
       gap: 12px;
-      align-items: flex-start; /* IMPORTANT : aligné à gauche */
+      align-items: flex-start;
       position: sticky;
       top: 18px;
     }
@@ -59,21 +45,11 @@
       font-weight: 700;
     }
 
-    /* Texte */
-    .story {
-      font-size: 18px;
-      line-height: 1.85;
-    }
+    .story { font-size: 18px; line-height: 1.85; }
     .story p { margin: 0 0 1.2em; }
 
-    /* Navigation bas de page */
-    .nav-next {
-      margin-top: 60px;
-      display: flex;
-      justify-content: flex-end;
-    }
+    .nav-next { margin-top: 60px; display: flex; justify-content: flex-end; }
 
-    /* OVERLAY (ne bouge pas le texte) */
     .overlay {
       position: fixed;
       inset: 0;
@@ -105,10 +81,7 @@
       border-bottom: 1px solid rgba(255,255,255,0.12);
     }
 
-    .panel-body {
-      padding: 12px;
-      overflow: auto;
-    }
+    .panel-body { padding: 12px; overflow: auto; }
 
     .panel img {
       width: 100%;
@@ -119,7 +92,6 @@
 
     body.locked { overflow: hidden; }
 
-    /* Mobile : 1 colonne (texte puis boutons) */
     @media (max-width: 900px) {
       .chapter-block { flex-direction: column; }
       .image-buttons { position: static; }
@@ -129,7 +101,6 @@
 
 <body>
   <main class="page">
-
     <header class="chapter-title">
       <h1>Tome I</h1>
       <p>Le Vagabond</p>
@@ -346,12 +317,14 @@
       <p>Des colosses.</p>
 
       <p>Comme arrachés à la terre elle-même.</p>
-    <nav class="nav-next">
+            </article>
+
+        <nav class="nav-next">
           <a class="btn" href="./chapitre-02.html">Chapitre 2 →</a>
         </nav>
       </div>
 
-      <!-- DROITE : BOUTONS (3 illustrations) -->
+      <!-- DROITE : BOUTONS -->
       <aside class="image-column">
         <div class="image-buttons">
           <button class="btn main" data-open="art1">Illustration 1</button>
@@ -363,7 +336,7 @@
     </section>
   </main>
 
-  <!-- OVERLAY 1 -->
+  <!-- OVERLAYS -->
   <div class="overlay" id="art1" aria-hidden="true">
     <div class="panel" role="dialog" aria-modal="true" aria-label="Illustration 1">
       <div class="panel-head">
@@ -376,7 +349,6 @@
     </div>
   </div>
 
-  <!-- OVERLAY 2 -->
   <div class="overlay" id="art2" aria-hidden="true">
     <div class="panel" role="dialog" aria-modal="true" aria-label="Illustration 2">
       <div class="panel-head">
@@ -389,7 +361,6 @@
     </div>
   </div>
 
-  <!-- OVERLAY 3 -->
   <div class="overlay" id="art3" aria-hidden="true">
     <div class="panel" role="dialog" aria-modal="true" aria-label="Illustration 3">
       <div class="panel-head">
@@ -413,7 +384,6 @@
       document.body.classList.remove("locked");
     }
 
-    // Ouvre l'overlay lié au bouton
     document.querySelectorAll("[data-open]").forEach(btn => {
       btn.addEventListener("click", () => {
         const id = btn.getAttribute("data-open");
@@ -422,7 +392,6 @@
       });
     });
 
-    // Ferme via bouton "Fermer"
     document.querySelectorAll(".overlay [data-close]").forEach(btn => {
       btn.addEventListener("click", () => {
         const overlay = btn.closest(".overlay");
@@ -430,14 +399,12 @@
       });
     });
 
-    // Ferme si clic sur fond noir
     document.querySelectorAll(".overlay").forEach(overlay => {
       overlay.addEventListener("click", (e) => {
         if (e.target === overlay) closeOverlay(overlay);
       });
     });
 
-    // ESC pour fermer
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         document.querySelectorAll(".overlay.open").forEach(overlay => closeOverlay(overlay));
