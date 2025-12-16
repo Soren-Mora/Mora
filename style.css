@@ -1,13 +1,33 @@
-body {
-  font-family: Georgia, serif;
-  background-color: #111;
-  color: #eee;
-  max-width: 700px;
-  margin: auto;
-  padding: 40px;
-  line-height: 1.6;
+.chapter-block {
+  display: flex;
+  gap: 40px;
+  margin: 80px 0;
 }
 
-h1 {
-  text-align: center;
+.text-column {
+  flex: 2;
+}
+
+.image-column {
+  flex: 1;
+}
+
+.image-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.img-btn {
+  background: #2a2a2a;
+  color: #eee;
+  border: 1px solid #444;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.img-btn.main {
+  background: #111;
+  border-color: #666;
+  font-weight: bold;
 }
