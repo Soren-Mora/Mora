@@ -17,7 +17,7 @@
   gap: 12px;
 }
 
-.img-btn {
+.btn{
   background: #2a2a2a;
   color: #eee;
   border: 1px solid #444;
@@ -39,7 +39,8 @@
   font-size: 16px;
   white-space: pre-wrap;   /* magique : garde tes retours à la ligne */
 }
-.inline-illustration {
+.inline-illustration{
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   margin: 8px 0 16px;
