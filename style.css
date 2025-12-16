@@ -1,47 +1,161 @@
-.chapter-block {
-  display: flex;
-  gap: 40px;
-  margin: 80px 0;
+/* ========== Base ========== */
+:root{
+  --bg:#0b0b0d;
+  --fg:#f2f2f2;
+  --muted:rgba(255,255,255,0.75);
+  --border:rgba(255,255,255,0.18);
+  --btnbg:rgba(255,255,255,0.06);
+  --btnbgHover:rgba(255,255,255,0.10);
 }
 
-.text-column {
-  flex: 2;
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-.image-column {
-  flex: 1;
+/* ========== Page ========== */
+.page{
+  max-width:1100px;
+  margin:0 auto;
+  padding:48px 20px 80px;
 }
 
-.image-buttons {
-  display: flex;
-  gap: 12px;
+.chapter-title{
+  text-align:center;
+  margin-bottom:28px;
+}
+.chapter-title h1,
+.chapter-title h2,
+.chapter-title p{ margin:0; }
+.chapter-title p{ margin-top:8px; opacity:0.85; }
+
+/* ========== 2 colonnes ========== */
+.chapter-block{
+  display:flex;
+  gap:40px;
+  margin-top:22px;
+  align-items:flex-start;
+}
+.text-column{
+  flex:2;
+  text-align:left;
+}
+.image-column{
+  flex:1;
 }
 
+/* Boutons à droite */
+.image-buttons{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:flex-start;
+  position:sticky;
+  top:18px;
+}
+
+/* Boutons */
 .btn{
-  background: #2a2a2a;
-  color: #eee;
-  border: 1px solid #444;
-  padding: 8px 14px;
-  border-radius: 6px;
-  cursor: pointer;
+  border:1px solid var(--border);
+  padding:10px 14px;
+  border-radius:10px;
+  background:var(--btnbg);
+  color:inherit;
+  cursor:pointer;
+  text-decoration:none;
+  display:inline-block;
+}
+.btn:hover{ background:var(--btnbgHover); }
+
+.btn.main{
+  background:rgba(255,255,255,0.10);
+  border-color:rgba(255,255,255,0.35);
+  font-weight:700;
 }
 
-.img-btn.main {
-  background: #111;
-  border-color: #666;
-  font-weight: bold;
+/* ========== Texte ========== */
+.story{
+  font-size:18px;
+  line-height:1.85;
 }
-.text-column { text-align: left; }
+.story p{ margin:0 0 1.2em; }
+
+/* Bouton inline (dans le texte, à droite du paragraphe) */
+.paragraph-with-illustration{
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
 }
-.chapter-text{
-  text-align: left;
-  line-height: 1.8;
-  font-size: 16px;
-  white-space: pre-wrap;   /* magique : garde tes retours à la ligne */
+.paragraph-with-illustration p{
+  flex:1;
+  margin:0;
 }
-.inline-illustration{
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  margin: 8px 0 16px;
+.btn.inline-btn{
+  white-space:nowrap;
+  margin-top:6px;
+}
+
+/* ========== Navigation bas ========== */
+.nav-next{
+  margin-top:60px;
+  display:flex;
+  justify-content:flex-end;
+}
+
+/* ========== Overlay image (popup) ========== */
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.72);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  z-index:9999;
+}
+.overlay.open{ display:flex; }
+
+.panel{
+  width:min(980px, 100%);
+  max-height:90vh;
+  background:rgba(20,20,20,0.92);
+  border:1px solid rgba(255,255,255,0.16);
+  border-radius:16px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+.panel-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 14px;
+  border-bottom:1px solid rgba(255,255,255,0.12);
+}
+
+.panel-body{
+  padding:12px;
+  overflow:auto;
+}
+
+.panel img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:10px;
+}
+
+/* bloque le scroll quand popup ouvert */
+body.locked{ overflow:hidden; }
+
+/* Mobile */
+@media (max-width:900px){
+  .chapter-block{ flex-direction:column; }
+  .image-buttons{ position:static; }
+  .paragraph-with-illustration{ flex-direction:column; }
+  .btn.inline-btn{ margin-top:0; }
 }
