@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mora – Tome I – Chapitre 1</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header>
+  <h1>Mora</h1>
+  <h2>Tome I – Chapitre 1</h2>
+</header>
+
+<main class="lecture">
+
+  <section class="texte">
+    <p>
+      Ici commence le premier chapitre de Mora.
+      <br><br>
+      Tu remplaceras ce texte par ton vrai texte plus tard.
+    </p>
+  </section>
+
+  <section class="illustration">
+    <button onclick="toggleImage()">Voir l’illustration</button>
+
+    <div id="image-panel">
+      <img src="image-01.jpg" alt="Illustration du chapitre">
+    </div>
+  </section>
+
+</main>
+
+<script>
+function toggleImage() {
+  const panel = document.getElementById("image-panel");
+  panel.classList.toggle("open");
+}
+</script>
+
+</body>
+</html>
