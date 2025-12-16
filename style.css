@@ -1,0 +1,13 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #111;
+  color: #eee;
+  max-width: 700px;
+  margin: auto;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+}
