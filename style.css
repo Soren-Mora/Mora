@@ -39,3 +39,8 @@
   font-size: 16px;
   white-space: pre-wrap;   /* magique : garde tes retours à la ligne */
 }
+.inline-illustration {
+  display: flex;
+  justify-content: flex-end;
+  margin: 8px 0 16px;
+}
