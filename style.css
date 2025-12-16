@@ -33,3 +33,9 @@
 }
 .text-column { text-align: left; }
 }
+.chapter-text{
+  text-align: left;
+  line-height: 1.8;
+  font-size: 16px;
+  white-space: pre-wrap;   /* magique : garde tes retours à la ligne */
+}
