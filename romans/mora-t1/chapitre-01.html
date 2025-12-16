@@ -5,102 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mora — Tome I — Chapitre 1</title>
 
+  <!-- CSS global du site -->
   <link rel="stylesheet" href="../../style.css" />
-
-  <style>
-    .page { max-width: 1100px; margin: 0 auto; padding: 48px 20px 80px; }
-
-    .chapter-title { text-align: center; margin-bottom: 28px; }
-    .chapter-title h1, .chapter-title h2, .chapter-title p { margin: 0; }
-    .chapter-title p { margin-top: 8px; opacity: 0.85; }
-
-    .chapter-block { display: flex; gap: 40px; margin-top: 22px; align-items: flex-start; }
-    .text-column { flex: 2; text-align: left; }
-    .image-column { flex: 1; }
-
-    .image-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      align-items: flex-start;
-      position: sticky;
-      top: 18px;
-    }
-
-    .btn {
-      border: 1px solid rgba(255,255,255,0.25);
-      padding: 10px 14px;
-      border-radius: 10px;
-      background: rgba(255,255,255,0.06);
-      color: inherit;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .btn:hover { background: rgba(255,255,255,0.10); }
-
-    .btn.main {
-      background: rgba(255,255,255,0.10);
-      border-color: rgba(255,255,255,0.35);
-      font-weight: 700;
-    }
-
-    .story { font-size: 18px; line-height: 1.85; }
-    .story p { margin: 0 0 1.2em; }
-
-    .nav-next { margin-top: 60px; display: flex; justify-content: flex-end; }
-
-    .overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.72);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 18px;
-      z-index: 9999;
-    }
-    .overlay.open { display: flex; }
-
-    .panel {
-      width: min(980px, 100%);
-      max-height: 90vh;
-      background: rgba(20,20,20,0.92);
-      border: 1px solid rgba(255,255,255,0.16);
-      border-radius: 16px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .panel-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 14px;
-      border-bottom: 1px solid rgba(255,255,255,0.12);
-    }
-
-    .panel-body { padding: 12px; overflow: auto; }
-
-    .panel img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 10px;
-    }
-
-    body.locked { overflow: hidden; }
-
-    @media (max-width: 900px) {
-      .chapter-block { flex-direction: column; }
-      .image-buttons { position: static; }
-    }
-  </style>
 </head>
 
 <body>
   <main class="page">
+
     <header class="chapter-title">
       <h1>Tome I</h1>
       <p>Le Vagabond</p>
@@ -112,238 +23,237 @@
       <!-- GAUCHE : TEXTE -->
       <div class="text-column">
         <article class="story">
-      <p>Un vent marin violent soufflait sur les bâtisses anciennes. Les murailles côtières ployaient sous les assauts des vagues, tandis que le ciel, chargé de nuages sombres, recouvrait le vieux fort marqué par le temps. En arrière-fond, une vive lueur rougeoyante se laissait percevoir : un astre rouge, caché derrière les nuages, tandis que la nuit gagnait et recouvrait le décor.</p>
 
-      <p>Non loin du port, un incendie dévorait la ville basse. Les quais d’accostage, noyés de fumée et de poussière, n’étaient plus qu’un amas de bois brisé, de débris et de cendres. La mort flottait dans l’air — une odeur lourde, stagnante, mêlée aux relents du sel marin.</p>
+          <p>Un vent marin violent soufflait sur les bâtisses anciennes. Les murailles côtières ployaient sous les assauts des vagues, tandis que le ciel, chargé de nuages sombres, recouvrait le vieux fort marqué par le temps. En arrière-fond, une vive lueur rougeoyante se laissait percevoir : un astre rouge, caché derrière les nuages, tandis que la nuit gagnait et recouvrait le décor.</p>
 
-      <p>Sur la pierre noircie, des symboles étaient gravés, grossiers, inquiétants. Certains encerclés de cendres comme brûlés de l’intérieur. D’autres semblaient tracés avec du sang.</p>
+          <p>Non loin du port, un incendie dévorait la ville basse. Les quais d’accostage, noyés de fumée et de poussière, n’étaient plus qu’un amas de bois brisé, de débris et de cendres. La mort flottait dans l’air — une odeur lourde, stagnante, mêlée aux relents du sel marin.</p>
 
-      <p>Au centre de l’un d’eux, un homme était allongé.</p>
+          <p>Sur la pierre noircie, des symboles étaient gravés, grossiers, inquiétants. Certains encerclés de cendres comme brûlés de l’intérieur. D’autres semblaient tracés avec du sang.</p>
 
-      <p>Il reprit conscience dans la confusion du tumulte, les yeux fixés sur le ciel tourmenté.</p>
+          <p>Au centre de l’un d’eux, un homme était allongé.</p>
 
-      <p>— Ma tête…</p>
+          <p>Il reprit conscience dans la confusion du tumulte, les yeux fixés sur le ciel tourmenté.</p>
 
-      <p>Il se redressa lentement. Encore étourdi, il ne nota pas immédiatement l’horreur qui l’entourait. Il portait un manteau noir, un peu usé aux épaules, comme ceux des voyageurs sans destination. Ses cheveux, sombres et épars, lui tombaient sur le front et masquaient en partie son regard. Son visage, pâle et tiré, témoignait davantage de fatigue que d’âge. Ses yeux, d’un violet étrange mais naturel, donnaient l’impression d’un homme qui dort peu et observe beaucoup. Rien dans son apparence ne révélait qui il était, mais tout indiquait quelqu’un qui ne s’attache nulle part.</p>
+          <p>— Ma tête…</p>
 
-      <p>Une bourrasque lui fouetta le visage. Il tourna la tête — le brasier rugissait. La ville brûlait tout entière. Il regarda, sans comprendre ce qu’il voyait.</p>
+          <p>Il se redressa lentement. Encore étourdi, il ne nota pas immédiatement l’horreur qui l’entourait. Il portait un manteau noir, un peu usé aux épaules, comme ceux des voyageurs sans destination. Ses cheveux, sombres et épars, lui tombaient sur le front et masquaient en partie son regard. Son visage, pâle et tiré, témoignait davantage de fatigue que d’âge. Ses yeux, d’un violet étrange mais naturel, donnaient l’impression d’un homme qui dort peu et observe beaucoup. Rien dans son apparence ne révélait qui il était, mais tout indiquait quelqu’un qui ne s’attache nulle part.</p>
 
-      <p>Puis il balaya les alentours du regard : des armes abandonnées, certaines brisées, d’autres encore intactes, jonchaient le sol. Il fit un pas en arrière — ses chaussures s’étaient posées dans une flaque rouge.</p>
+          <p>Une bourrasque lui fouetta le visage. Il tourna la tête — le brasier rugissait. La ville brûlait tout entière. Il regarda, sans comprendre ce qu’il voyait.</p>
 
-      <p>Il baissa les yeux.</p>
+          <p>Puis il balaya les alentours du regard : des armes abandonnées, certaines brisées, d’autres encore intactes, jonchaient le sol. Il fit un pas en arrière — ses chaussures s’étaient posées dans une flaque rouge.</p>
 
-      <p>Du sang. Partout.</p>
+          <p>Il baissa les yeux.</p>
 
-      <p>Autour de lui. Sur les pierres.</p>
+          <p>Du sang. Partout.</p>
 
-      <p>Et sur le symbole.</p>
+          <p>Autour de lui. Sur les pierres.</p>
 
-      <p>— Quoi…? Mais… C’est quoi tout ce sang ?!</p>
+          <p>Et sur le symbole.</p>
 
-      <p>Il se tourna, hagard.</p>
+          <p>— Quoi…? Mais… C’est quoi tout ce sang ?!</p>
 
-      <p>— Je suis où ?!</p>
+          <p>Il se tourna, hagard.</p>
 
-      <p>Il fixait ses mains, cherchant une blessure. Il n’en trouva aucune. Pourtant, le sang était bien là.</p>
+          <p>— Je suis où ?!</p>
 
-      <p>Une voix douce, presque chantée, brisa le silence calciné :</p>
+          <p>Il fixait ses mains, cherchant une blessure. Il n’en trouva aucune. Pourtant, le sang était bien là.</p>
 
-      <p>— Ce n’est pas le tien.</p>
+          <p>Une voix douce, presque chantée, brisa le silence calciné :</p>
 
-      <p>Il se retourna d’un geste brusque.</p>
+          <p>— Ce n’est pas le tien.</p>
 
-      <p>Elle était là.</p>
+          <p>Il se retourna d’un geste brusque.</p>
 
-   <div class="paragraph-with-illustration">
-  <p>
-    Une petite silhouette, flottante, comme composée de brume et de lumière.
-    Une fillette, lumineuse, bleutée, presque transparente. Une robe simple,
-    des cheveux clairs, un sourire trop tranquille pour appartenir à ce lieu ravagé.
-  </p>
+          <p>Elle était là.</p>
 
-  <button class="btn inline-btn" data-open="art2">
-    Voir l’illustration
-  </button>
-</div>
-      <p>— Qui… qui es-tu ?</p>
+          <!-- ICI : bouton inline pour l’illustration 2 (comme tu voulais) -->
+          <div class="paragraph-with-illustration">
+            <p>Une petite silhouette, flottante, comme composée de brume et de lumière. Une fillette, lumineuse, bleutée, presque transparente. Une robe simple, des cheveux clairs, un sourire trop tranquille pour appartenir à ce lieu ravagé.</p>
+            <button class="btn inline-btn" data-open="art2">Voir l’illustration</button>
+          </div>
 
-      <p>Elle réfléchit, ou fit semblant.</p>
+          <p>— Qui… qui es-tu ?</p>
 
-      <p>— Pas la bonne question.</p>
+          <p>Elle réfléchit, ou fit semblant.</p>
 
-      <p>Il regarda autour. Ruines. Cendres. Aucun corps. Seulement des armes. Du sang. Mais aucun mort.</p>
+          <p>— Pas la bonne question.</p>
 
-      <p>— Alors… qu’est-ce que tu es ?</p>
+          <p>Il regarda autour. Ruines. Cendres. Aucun corps. Seulement des armes. Du sang. Mais aucun mort.</p>
 
-      <p>Elle haussa légèrement les épaules.</p>
+          <p>— Alors… qu’est-ce que tu es ?</p>
 
-      <p>— Une voix. Une témoin. On me prête un visage pour que tu m’écoutes.</p>
+          <p>Elle haussa légèrement les épaules.</p>
 
-      <p>Il resta muet. Elle le fixait, comme si elle attendait qu’il comprenne quelque chose qu’il ignorait encore.</p>
+          <p>— Une voix. Une témoin. On me prête un visage pour que tu m’écoutes.</p>
 
-      <p>Puis, doucement :</p>
+          <p>Il resta muet. Elle le fixait, comme si elle attendait qu’il comprenne quelque chose qu’il ignorait encore.</p>
 
-      <p>— Tu te nommes Elrian.</p>
+          <p>Puis, doucement :</p>
 
-      <p>Il sentit un frisson. Pas de souvenir. Mais ce nom sonnait vrai.</p>
+          <p>— Tu te nommes Elrian.</p>
 
-      <p>— C’est… vraiment mon nom ?</p>
+          <p>Il sentit un frisson. Pas de souvenir. Mais ce nom sonnait vrai.</p>
 
-      <p>— Ici, oui.</p>
+          <p>— C’est… vraiment mon nom ?</p>
 
-      <p>— Ici ?</p>
+          <p>— Ici, oui.</p>
 
-      <p>Elle acquiesça.</p>
+          <p>— Ici ?</p>
 
-      <p>— Le Purgatoire.</p>
+          <p>Elle acquiesça.</p>
 
-      <p>Il recula d’un pas.</p>
+          <p>— Le Purgatoire.</p>
 
-      <p>— Je suis mort ?</p>
+          <p>Il recula d’un pas.</p>
 
-      <p>Elle sourit — pas de joie, mais de compassion.</p>
+          <p>— Je suis mort ?</p>
 
-      <p>— Ni mort… ni vivant. Suspendu.</p>
+          <p>Elle sourit — pas de joie, mais de compassion.</p>
 
-      <p>— Suspendu à quoi ?</p>
+          <p>— Ni mort… ni vivant. Suspendu.</p>
 
-      <p>Elle le regarda longuement, comme pour peser la réponse.</p>
+          <p>— Suspendu à quoi ?</p>
 
-      <p>— À ton jugement.</p>
+          <p>Elle le regarda longuement, comme pour peser la réponse.</p>
 
-      <p>Il sentit son cœur s’accélérer. L’envie de fuir, mais nulle part où aller.</p>
+          <p>— À ton jugement.</p>
 
-      <p>— Qui me juge ?</p>
+          <p>Il sentit son cœur s’accélérer. L’envie de fuir, mais nulle part où aller.</p>
 
-      <p>— Mora.</p>
+          <p>— Qui me juge ?</p>
 
-      <p>Il secoua la tête.</p>
+          <p>— Mora.</p>
 
-      <p>— Mora… le monde ?</p>
+          <p>Il secoua la tête.</p>
 
-      <p>— Mora, la Loi.</p>
+          <p>— Mora… le monde ?</p>
 
-      <p>Silence.</p>
+          <p>— Mora, la Loi.</p>
 
-      <p>— Alors… je suis jugé pour quoi ?</p>
+          <p>Silence.</p>
 
-      <p>Elle ne répondit pas tout de suite. Elle désigna quelque chose au sol — une arme abandonnée, rouillée, à moitié calcinée.</p>
+          <p>— Alors… je suis jugé pour quoi ?</p>
 
-      <p>— Tu as porté des armes. Mais tu ne les as pas toujours guidées.</p>
+          <p>Elle ne répondit pas tout de suite. Elle désigna quelque chose au sol — une arme abandonnée, rouillée, à moitié calcinée.</p>
 
-      <p>Il fronça les sourcils.</p>
+          <p>— Tu as porté des armes. Mais tu ne les as pas toujours guidées.</p>
 
-      <p>— Je ne comprends pas.</p>
+          <p>Il fronça les sourcils.</p>
 
-      <p>— Tu comprends, mais tu ne te souviens pas.</p>
+          <p>— Je ne comprends pas.</p>
 
-      <p>Il inspira lentement, comme si le monde était plus lourd que l’air.</p>
+          <p>— Tu comprends, mais tu ne te souviens pas.</p>
 
-      <p>— Et si je ne me souviens jamais ?</p>
+          <p>Il inspira lentement, comme si le monde était plus lourd que l’air.</p>
 
-      <p>— Ce n’est pas ce qu’on attend de toi.</p>
+          <p>— Et si je ne me souviens jamais ?</p>
 
-      <p>— Alors… qu’est-ce qu’on attend ?</p>
+          <p>— Ce n’est pas ce qu’on attend de toi.</p>
 
-      <p>Elle s’approcha — ou peut-être que lui recula.</p>
+          <p>— Alors… qu’est-ce qu’on attend ?</p>
 
-      <p>— Ici, la mémoire ment. Ce que tu as été ne compte plus. Ce que tu feras, oui.</p>
+          <p>Elle s’approcha — ou peut-être que lui recula.</p>
 
-      <p>Il s’étonna :</p>
+          <p>— Ici, la mémoire ment. Ce que tu as été ne compte plus. Ce que tu feras, oui.</p>
 
-      <p>— Mais comment faire… sans savoir qui j’étais ?</p>
+          <p>Il s’étonna :</p>
 
-      <p>Elle murmura :</p>
+          <p>— Mais comment faire… sans savoir qui j’étais ?</p>
 
-      <p>— Tu n’es pas ici pour te rappeler. Tu es ici pour te révéler.</p>
+          <p>Elle murmura :</p>
 
-      <p>Il la fixait. Elle ajouta enfin, doucement, comme un verdict :</p>
+          <p>— Tu n’es pas ici pour te rappeler. Tu es ici pour te révéler.</p>
 
-      <p>— Tu n’as pas franchi les portes de Valle. Tu as échoué à devenir ce que tu devais être. Tu as été refusé.</p>
+          <p>Il la fixait. Elle ajouta enfin, doucement, comme un verdict :</p>
 
-      <p>Il se figea.</p>
+          <p>— Tu n’as pas franchi les portes de Valle. Tu as échoué à devenir ce que tu devais être. Tu as été refusé.</p>
 
-      <p>— Refusé… par qui ?</p>
+          <p>Il se figea.</p>
 
-      <p>— Par les vivants, par les morts… par toi-même.</p>
+          <p>— Refusé… par qui ?</p>
 
-      <p>Silence.</p>
+          <p>— Par les vivants, par les morts… par toi-même.</p>
 
-      <p>Puis, comme si elle récitait quelque chose d’ancien :</p>
+          <p>Silence.</p>
 
-      <p>— Lorsqu’un héros tombe contre le mal, Mora ne le laisse pas disparaître tout de suite. Elle le suspend. Elle lui laisse une chance. Une chance d’affronter non pas la mort… … mais ce qu’il fut.</p>
+          <p>Puis, comme si elle récitait quelque chose d’ancien :</p>
 
-      <p>La fillette recula d’un pas.</p>
+          <p>— Lorsqu’un héros tombe contre le mal, Mora ne le laisse pas disparaître tout de suite. Elle le suspend. Elle lui laisse une chance. Une chance d’affronter non pas la mort… … mais ce qu’il fut.</p>
 
-      <p>— Tu n’es pas mort. Mais tu n’es plus vivant. Ton temps est brisé, ta mémoire aussi. Fragmentée. C’est voulu.</p>
+          <p>La fillette recula d’un pas.</p>
 
-      <p>Il serra les poings.</p>
+          <p>— Tu n’es pas mort. Mais tu n’es plus vivant. Ton temps est brisé, ta mémoire aussi. Fragmentée. C’est voulu.</p>
 
-      <p>— Fragmentée ? Pourquoi ?!</p>
+          <p>Il serra les poings.</p>
 
-      <p>— Car ici, ton passé ne te protège plus.</p>
+          <p>— Fragmentée ? Pourquoi ?!</p>
 
-      <p>Il approcha. Comme si le besoin de comprendre dépassait la peur.</p>
+          <p>— Car ici, ton passé ne te protège plus.</p>
 
-      <p>— Alors… tu es ici pour me guider ?</p>
+          <p>Il approcha. Comme si le besoin de comprendre dépassait la peur.</p>
 
-      <p>Elle secoua doucement la tête.</p>
+          <p>— Alors… tu es ici pour me guider ?</p>
 
-      <p>— Non. Je suis ici pour m’assurer que personne ne te guidera… injustement.</p>
+          <p>Elle secoua doucement la tête.</p>
 
-      <p>— Alors… tu es de quel côté ?</p>
+          <p>— Non. Je suis ici pour m’assurer que personne ne te guidera… injustement.</p>
 
-      <p>Elle le regarda fixement.</p>
+          <p>— Alors… tu es de quel côté ?</p>
 
-      <p>— Je suis de ton côté. Mais je ne suis pas ton aide.</p>
+          <p>Elle le regarda fixement.</p>
 
-      <p>Elrian fixait au loin une tour d’où s’échappait une faible lueur bleutée. La fillette, à ses côtés, murmura :</p>
+          <p>— Je suis de ton côté. Mais je ne suis pas ton aide.</p>
 
-      <p>— Ta route croisera ce lieu. Tu n’as pas le choix. Affronte le Purgatoire… ou tombe dans le Néant. Je serai là, à observer. Si les règles changent, je reviendrai te les dicter. Jusqu’à là… affronte, et peut-être, comprends.</p>
+          <p>Elrian fixait au loin une tour d’où s’échappait une faible lueur bleutée. La fillette, à ses côtés, murmura :</p>
 
-      <p>Un silence.</p>
+          <p>— Ta route croisera ce lieu. Tu n’as pas le choix. Affronte le Purgatoire… ou tombe dans le Néant. Je serai là, à observer. Si les règles changent, je reviendrai te les dicter. Jusqu’à là… affronte, et peut-être, comprends.</p>
 
-      <p>— Première étape, Vagabond : la ville en feu. Trouve le pont menant à la caserne.</p>
+          <p>Un silence.</p>
 
-      <p>Puis elle se dissipa lentement, comme une brume légère emportée par le vent.</p>
+          <p>— Première étape, Vagabond : la ville en feu. Trouve le pont menant à la caserne.</p>
 
-      <p>Elrian se redressa. Il sentit à sa taille le poids d’une épée, au métal sombre, pendue à une ceinture qu’il ne se souvenait pas avoir portée. Il leva les yeux vers le ciel : les nuages orageux gagnaient du terrain, étouffant les dernières lueurs du jour. La nuit approchait.</p>
+          <p>Puis elle se dissipa lentement, comme une brume légère emportée par le vent.</p>
 
-      <p>Il suivit le quai de pierre, avançant jusqu’à la seule ouverture épargnée par les flammes et les décombres.</p>
+          <p>Elrian se redressa. Il sentit à sa taille le poids d’une épée, au métal sombre, pendue à une ceinture qu’il ne se souvenait pas avoir portée. Il leva les yeux vers le ciel : les nuages orageux gagnaient du terrain, étouffant les dernières lueurs du jour. La nuit approchait.</p>
 
-      <p>Devant lui, la ville brûlait.</p>
+          <p>Il suivit le quai de pierre, avançant jusqu’à la seule ouverture épargnée par les flammes et les décombres.</p>
 
-      <p>Des murs de feu, des bâtisses craquelées, des hurlements noyés dans la fumée.</p>
+          <p>Devant lui, la ville brûlait.</p>
 
-      <p>Mais au milieu du brasier… une forme.</p>
+          <p>Des murs de feu, des bâtisses craquelées, des hurlements noyés dans la fumée.</p>
 
-      <p>Une silhouette gigantesque, avançant d’un pas lourd, comme un mort qui se refuse à tomber.</p>
+          <p>Mais au milieu du brasier… une forme.</p>
 
-      <p>Puis une autre, au loin.</p>
+          <p>Une silhouette gigantesque, avançant d’un pas lourd, comme un mort qui se refuse à tomber.</p>
 
-      <p>Et encore une troisième.</p>
+          <p>Puis une autre, au loin.</p>
 
-      <p>Des colosses.</p>
+          <p>Et encore une troisième.</p>
 
-      <p>Comme arrachés à la terre elle-même.</p>
-            </article>
+          <p>Des colosses.</p>
+
+          <p>Comme arrachés à la terre elle-même.</p>
+
+        </article>
 
         <nav class="nav-next">
           <a class="btn" href="./chapitre-02.html">Chapitre 2 →</a>
         </nav>
       </div>
 
-      <!-- DROITE : BOUTONS -->
+      <!-- DROITE : BOUTONS (fixes) -->
       <aside class="image-column">
         <div class="image-buttons">
           <button class="btn main" data-open="art1">Illustration 1</button>
+          <button class="btn" data-open="art2">Illustration 2</button>
+          <button class="btn" data-open="art3">Illustration 3</button>
         </div>
       </aside>
 
     </section>
   </main>
 
-  <!-- OVERLAYS -->
+  <!-- OVERLAY 1 -->
   <div class="overlay" id="art1" aria-hidden="true">
     <div class="panel" role="dialog" aria-modal="true" aria-label="Illustration 1">
       <div class="panel-head">
@@ -356,6 +266,7 @@
     </div>
   </div>
 
+  <!-- OVERLAY 2 -->
   <div class="overlay" id="art2" aria-hidden="true">
     <div class="panel" role="dialog" aria-modal="true" aria-label="Illustration 2">
       <div class="panel-head">
@@ -368,6 +279,7 @@
     </div>
   </div>
 
+  <!-- OVERLAY 3 -->
   <div class="overlay" id="art3" aria-hidden="true">
     <div class="panel" role="dialog" aria-modal="true" aria-label="Illustration 3">
       <div class="panel-head">
@@ -381,12 +293,11 @@
   </div>
 
   <script>
-    function openOverlay(overlay) {
+    function openOverlay(overlay){
       overlay.classList.add("open");
       document.body.classList.add("locked");
     }
-
-    function closeOverlay(overlay) {
+    function closeOverlay(overlay){
       overlay.classList.remove("open");
       document.body.classList.remove("locked");
     }
@@ -414,7 +325,7 @@
 
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
-        document.querySelectorAll(".overlay.open").forEach(overlay => closeOverlay(overlay));
+        document.querySelectorAll(".overlay.open").forEach(ov => closeOverlay(ov));
       }
     });
   </script>
